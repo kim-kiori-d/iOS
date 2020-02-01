@@ -61,16 +61,9 @@ class Calculator {
             reminder = result
         case .equals:
             if let lastOperation = lastBinaryOperation {
-//                print(result)
-//                if result != 0 {
-//                    swap(&result, &reminder)
-//                    result = lastOperation(reminder, result)
-//                }
-//                else {
                     result = lastOperation(reminder, result)
                     lastBinaryOperation = nil
                     reminder = 0
-//                }
             }
         }
         
