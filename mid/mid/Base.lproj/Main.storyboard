@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Ya-PA-fXc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" title="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="mid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U08-42-4QC">
+                                <rect key="frame" x="0.0" y="88" width="207" height="448"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EXy-yR-nkh">
+                                <rect key="frame" x="207" y="88" width="207" height="448"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I8j-p0-hRu">
+                                <rect key="frame" x="0.0" y="536" width="207" height="448"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7YF-ZC-MZd">
+                                <rect key="frame" x="207" y="536" width="207" height="448"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7YF-ZC-MZd" firstAttribute="height" secondItem="I8j-p0-hRu" secondAttribute="height" id="5da-ZE-RoN"/>
+                            <constraint firstItem="U08-42-4QC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BqR-oX-9Cz"/>
+                            <constraint firstItem="U08-42-4QC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="D4y-q2-vAJ"/>
+                            <constraint firstItem="I8j-p0-hRu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GRu-A7-weh"/>
+                            <constraint firstItem="EXy-yR-nkh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Jqd-ic-xAB"/>
+                            <constraint firstItem="I8j-p0-hRu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="UJd-Hg-mMx"/>
+                            <constraint firstItem="I8j-p0-hRu" firstAttribute="top" secondItem="U08-42-4QC" secondAttribute="bottom" id="Wma-jt-5NL"/>
+                            <constraint firstItem="U08-42-4QC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YGO-5F-0Nj"/>
+                            <constraint firstItem="EXy-yR-nkh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="dAy-ni-WVF"/>
+                            <constraint firstItem="EXy-yR-nkh" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="fSY-Yb-Nvs"/>
+                            <constraint firstItem="U08-42-4QC" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="fZZ-dK-TO8"/>
+                            <constraint firstItem="7YF-ZC-MZd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gyU-sY-go6"/>
+                            <constraint firstAttribute="trailing" secondItem="EXy-yR-nkh" secondAttribute="trailing" id="mLF-Ht-YpU"/>
+                            <constraint firstItem="7YF-ZC-MZd" firstAttribute="top" secondItem="EXy-yR-nkh" secondAttribute="bottom" id="qD9-Mi-UJa"/>
+                            <constraint firstItem="I8j-p0-hRu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="qn4-vY-uE9"/>
+                            <constraint firstItem="7YF-ZC-MZd" firstAttribute="width" secondItem="I8j-p0-hRu" secondAttribute="width" id="qpf-CZ-8Nd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DnB-o8-PsH"/>
+                    <connections>
+                        <outletCollection property="views" destination="U08-42-4QC" collectionClass="NSMutableArray" id="KVw-Hz-S9v"/>
+                        <outletCollection property="views" destination="EXy-yR-nkh" collectionClass="NSMutableArray" id="Lzx-fj-X7O"/>
+                        <outletCollection property="views" destination="I8j-p0-hRu" collectionClass="NSMutableArray" id="h8A-sM-BQj"/>
+                        <outletCollection property="views" destination="7YF-ZC-MZd" collectionClass="NSMutableArray" id="urW-uB-npk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="110"/>
+        </scene>
+        <!--Color View Controller-->
+        <scene sceneID="P3U-5f-zio">
+            <objects>
+                <viewController storyboardIdentifier="ColorVC" id="m99-gi-CTN" customClass="ColorViewController" customModule="mid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sF7-FA-DKQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dff-36-9rc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="448"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNa-xZ-MQl">
+                                <rect key="frame" x="0.0" y="448" width="414" height="448"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aNa-xZ-MQl" firstAttribute="height" secondItem="Dff-36-9rc" secondAttribute="height" id="BLL-1M-zbC"/>
+                            <constraint firstItem="aNa-xZ-MQl" firstAttribute="trailing" secondItem="Z4d-vv-j8I" secondAttribute="trailing" id="CEW-lf-egO"/>
+                            <constraint firstItem="Dff-36-9rc" firstAttribute="width" secondItem="sF7-FA-DKQ" secondAttribute="width" id="QGb-FD-8dR"/>
+                            <constraint firstItem="aNa-xZ-MQl" firstAttribute="leading" secondItem="Z4d-vv-j8I" secondAttribute="leading" id="THQ-zY-V6Y"/>
+                            <constraint firstItem="Dff-36-9rc" firstAttribute="top" secondItem="Z4d-vv-j8I" secondAttribute="top" id="bUv-A5-nLA"/>
+                            <constraint firstItem="Dff-36-9rc" firstAttribute="leading" secondItem="Z4d-vv-j8I" secondAttribute="leading" id="c3J-NJ-DrZ"/>
+                            <constraint firstAttribute="bottom" secondItem="aNa-xZ-MQl" secondAttribute="bottom" id="swy-ci-55D"/>
+                            <constraint firstItem="Z4d-vv-j8I" firstAttribute="trailing" secondItem="Dff-36-9rc" secondAttribute="trailing" id="vM6-aG-b3f"/>
+                            <constraint firstItem="Dff-36-9rc" firstAttribute="height" secondItem="sF7-FA-DKQ" secondAttribute="height" multiplier="0.5" id="wXY-DU-WWV"/>
+                            <constraint firstItem="aNa-xZ-MQl" firstAttribute="width" secondItem="Dff-36-9rc" secondAttribute="width" id="zIv-OO-UU2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z4d-vv-j8I"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="colorViews" destination="Dff-36-9rc" collectionClass="NSMutableArray" id="9qe-dh-ryA"/>
+                        <outletCollection property="colorViews" destination="aNa-xZ-MQl" collectionClass="NSMutableArray" id="Ehe-Gc-SL8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOh-EJ-BZq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965" y="111"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0N8-Ea-IBW">
+            <objects>
+                <navigationController id="1Ya-PA-fXc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yYX-0F-mLx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Js0-8I-kr1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fgz-16-MVu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-632" y="124"/>
+        </scene>
+    </scenes>
+</document>
